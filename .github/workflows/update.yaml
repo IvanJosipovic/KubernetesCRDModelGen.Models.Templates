@@ -10,6 +10,7 @@ on:
 
 jobs:
   sync-crds:
+    name: Update CRDs
     runs-on: ubuntu-latest
     steps:
 
@@ -23,6 +24,9 @@ jobs:
 
       - name: Get Sync Tool
         run: dotnet tool install --global KubernetesCRDModelGen.Sync --prerelease
+
+      - name: Clean Models
+        run: mkdir crds
 
       - name: Clean Models
         run: rm -rf crds
