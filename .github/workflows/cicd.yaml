@@ -1,0 +1,15 @@
+name: CICD
+
+on:
+  push:
+    branches:
+      - 'main'
+      - 'alpha'
+      - 'beta'
+  pull_request:
+    types: [opened, reopened, synchronize]
+  workflow_dispatch:
+
+jobs:
+  call-workflow:
+    uses: IvanJosipovic/KubernetesCRDModelGen/.github/workflow-templates/cicd.yaml@alpha
