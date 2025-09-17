@@ -32,7 +32,7 @@ jobs:
         run: rm -rf crds
 
       - name: Sync CRDs
-        run: KubernetesCRDModelGen.Sync --ModelDir ../crds
+        run: KubernetesCRDModelGen.Sync --ModelDir crds
 
     #   - name: Validate Yamls
     #     working-directory: crds
