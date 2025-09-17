@@ -1,1 +1,0 @@
-# KubernetesCRDModelGen.Models.aquasecurity.github.io
