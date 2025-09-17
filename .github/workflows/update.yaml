@@ -10,6 +10,6 @@ on:
 
 jobs:
   call-workflow:
-    uses: IvanJosipovic/KubernetesCRDModelGen/.github/workflow-templates/update.yaml@alpha
+    uses: IvanJosipovic/KubernetesCRDModelGen/.github/workflows/update-template.yaml@alpha
     secrets:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
