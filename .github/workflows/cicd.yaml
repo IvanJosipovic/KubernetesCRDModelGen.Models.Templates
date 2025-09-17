@@ -3,9 +3,9 @@ name: CICD
 on:
   push:
     branches:
-      - 'main'
-      - 'alpha'
-      - 'beta'
+    - 'main'
+    - 'alpha'
+    - 'beta'
   pull_request:
     types: [opened, reopened, synchronize]
   workflow_dispatch:
